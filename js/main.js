@@ -1,6 +1,6 @@
-(function($) {
-    $(function() {
-        $('.menu__icon').on('click', function() {
+(function ($) {
+    $(function () {
+        $('.menu__icon').on('click', function () {
             $(this).closest('.icon-wrapper').toggleClass('menu_state_open');
             if ($('li.invisible').css("display") == "none") {
 
@@ -13,8 +13,8 @@
 
 })(jQuery);
 
-$(document).ready(function() {
-    $("#fl_inp").change(function() {
+$(document).ready(function () {
+    $("#fl_inp").change(function () {
         var filename = $(this).val().replace(/.*\\/, "");
         $("#fl_nm").html(filename);
     });
